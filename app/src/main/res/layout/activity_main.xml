@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_images" />
+
+    <!-- Tom and Jerry ImageViews -->
+    <ImageView
+        android:id="@+id/tomImageView"
+        android:layout_width="@dimen/tom_width"
+        android:layout_height="@dimen/tom_height"
+        android:layout_marginLeft="@dimen/margin_left_tom"
+        android:layout_marginTop="@dimen/margin_top_tom"
+        android:src="@drawable/obstacle1_shape" />
+
+    <ImageView
+        android:id="@+id/jerryImageView"
+        android:layout_width="@dimen/jerry_width"
+        android:layout_height="@dimen/jerry_height"
+        android:layout_marginLeft="@dimen/margin_left_jerry"
+        android:layout_marginTop="@dimen/margin_top_jerry"
+        android:src="@drawable/obstacle2_shape" />
+
+    <!-- Buttons for Tom and Jerry -->
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/centre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Centre"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Include activity_end layout with visibility set to gone -->
+    <include
+        android:id="@+id/endScreen"
+        layout="@layout/activity_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

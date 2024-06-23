@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="obstacle_size">80dp</dimen>
+    <dimen name="tom_width">108dp</dimen>
+    <dimen name="tom_height">123dp</dimen>
+    <dimen name="jerry_width">80dp</dimen>
+    <dimen name="jerry_height">74dp</dimen>
+    <dimen name="margin_left_tom">150dp</dimen>
+    <dimen name="margin_top_tom">500dp</dimen>
+    <dimen name="margin_left_jerry">165dp</dimen>
+    <dimen name="margin_top_jerry">400dp</dimen>
+</resources>
